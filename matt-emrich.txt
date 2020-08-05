@@ -1,12 +1,13 @@
  https://codepen.io/matt22881/pen/VwawYZW?editors=1100
- 1. What is Semantic HTML? 
- language that describes and gives the content of a web page
+    
+    1. What is Semantic HTML? 
+    language that describes and gives the content of a web page
     2. What is HTML used for? 
     marking up the structure and content of a web page
     3. What is an attribute and where do we put it?
     a property of a componnent to a page explained by and put in the html tag 
     4. What is the h1 tag used for? How many times should I use it on a page?
-    the main and most important heading
+    the main and most important heading, should only be used once
     5. Name two tags that have required attributes
     id and class
     6. What do we put in the head of our HTML document? 
@@ -40,29 +41,29 @@
     20. How do we select classes in CSS?
     with a period .
     21. How do we select a p element with a single class of “human””?
-    p.'human"'' {}
+    p.human" {}
     22. What is a parent child selector? When would this be useful? 
-    used to pick a particular element from a group that may not always be of the same size
+    used to pick a particular element from a group...useful when that group may not always be of the same size
     23. How do you select all links within a div with the class of sidebar?
-    a:link.'sidebar' 
+    a:link.sidebar 
     24. What is a pseudo selector?
     used to indicate when an element is in a particular state
     25. What do we use the change the spacing between lines?
-    line-height=[percentage of font-height]
+    line-height
     26. What do we use to change the spacing between letters?
-    line-spacing
+    letter-spacing
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
-    text-transform:
+    text-transform: uppercase; text-transform: lowercase; text-transform: capitalize
     28. How do I add a 1px border around my div that is dotted and black?
     div {
+        border: dotted;
         border-width: '1px';
-        border-style: dotted;
         border-color: black;
     }
     29. How do I select everything on the page? 
     * {}
     30. How do I write a comment in CSS?
-    <!--comment-->
+    /*comment*/
     31. How do I find out what file I am in, when I am using the command line? 
     pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
@@ -74,7 +75,7 @@
     35. How often should I commit to github?
     every 20 minutes or any time a major change is confirmed working
     36. What is the command we would use to push our repo up to github? 
-    git add .
+    git push
     37. Walk me through Lambda's git flow. 
     fork the repo, add TL as collaborator, clone locally, do project, push to github, pull request when done
 
@@ -82,7 +83,12 @@ Stretch Questions
 
     1. What is the difference between an inline element and a block element?
     a block element will appear on its own line, inline elements can show up right beside what was last displayed
-    2. What happens when an element is positioned absolutely?    
+    2. What happens when an element is positioned absolutely? 
+    it position is set and other elements behave as if it weren't there   
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    use max-width: instead of width:
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    block: div, p, h1  --  inline: span img  --  inline-block: button
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    the box model explains the spacing around an element and how it relates to the objects around it.  the "fix" i think is referring to box-sizing:border-box where the overall size up to and including the border (not the margins ☹️) is used unlike the default model that doesn't account for borders and padding in the element size
+    
